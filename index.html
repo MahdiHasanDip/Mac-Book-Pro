@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC-Book-Pro</title>
+
+
+    <!-- STYLE  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+</head>
+
+
+<body>
+
+    <main class="grid grid-cols-2 gap-4">
+        <!-- Image Section  -->
+        <section>
+            <div class="grid justify-items-center mt-8">
+                <img src="images/mac.png" width="500px" height="400px" alt="">
+            </div>
+        </section>
+        <section class="p-5 ">
+            <div>
+                <h1 class="text-5xl mb-5 ">
+                    Customize your Blue 24-inch iMac With Apple M! chip
+                </h1>
+                <p class="pr-6 mb-5">
+                    Apploe M1chip with 8-core CPU with 4Purformance cores and 4 efficiency cores, 7-cores GPU, and
+                    16-core
+                    Neural Engin 8GB unified memory 256 GB SSD storage Two Thunderbolt/USB 4port Magic Mouce Magic
+                    keybord
+                    US English.
+                </p>
+            </div>
+            <!-- memory  -->
+            <div class="mt-10">
+                <h3 class="text-xl font-bold">
+                    Memory
+                </h3>
+                <button id="memory1"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:bg-black hover:text-white ">8GB
+                    unified
+                    memory</button>
+                <button id="memory2"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">16GB
+                    unified
+                    memory</button>
+            </div>
+
+            <!-- Storage  -->
+
+            <div class="mt-10 ">
+                <h3 class="text-xl font-bold">
+                    Storage
+                </h3>
+                <button id="storage-1"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">256GB
+                    SSD
+                    storage</button>
+                <button id="storage-2"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">512GB
+                    SSD
+                    storage</button>
+                <button id="storage-3"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">1TB
+                    SSD
+                    storage</button>
+            </div>
+            <!-- delivery  -->
+            <div class="mt-10">
+                <h3 class="text-xl font-bold">
+                    Choose your delivery option
+                </h3>
+                <button id="free-delivery"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">
+                    Friday, Aug
+                    25
+                    Free Prime
+                    Delivery </button>
+                <button id="express-delivery"
+                    class="border-2 border-gray-400 rounded-xl p-2 m-1 hover:shadow-xl hover:shadow-xl hover:bg-black hover:text-white">
+                    Friday,
+                    Aug
+                    21 Delivery charge
+                    $20 </button>
+            </div>
+
+
+
+            <!-- Total saction  -->
+            <table class="text-x font-bold
+            m-10" style="width:70%">
+
+                <tr style=" border-bottom: 1px solid #ddd">
+                    <td>Best Price</td>
+
+                    <td>$ <span id="best-price">1299</span></td>
+                </tr>
+                <tr style=" border-bottom: 1px solid #ddd">
+                    <td>Extra Memory Cost</td>
+
+                    <td>$ <span id="memory-price">0</span></td>
+                </tr>
+                <tr style=" border-bottom: 1px solid #ddd">
+                    <td>Extra Storage Cost</td>
+
+                    <td>$ <span id="storage-price">0</span></td>
+                </tr>
+                <tr style=" border-bottom: 2px solid black">
+                    <td>Delivery</td>
+
+                    <td>$ <span id="delivery-cost">0</span></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+
+                    <td>$ <span id="total-price">1299</span></td>
+                </tr>
+
+            </table>
+
+            <!-- promo Section -->
+            <div>
+                <h3 class="font-bold">Add Promo Code</h3>
+                <div class="mb-4">
+
+                    <input id='promo-input'
+                        class="shadow appearance-none border rounded w-2/4 py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline mt-2"
+                        type="text" placeholder="Promo code">
+                    <button id="promo-btn"
+                        class="bg-red-500 hover:bg-red-400 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button">
+                        Apply
+                    </button>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <hr>
+    <div class="text-4xl font-bold grid justify-items-center mb-8 mt-2">
+        <h3 class="text-4xl font-bold ">Total: <span id="grand-total-price">1299</span>
+        </h3>
+    </div>
+
+
+
+
+    <!-- JS  -->
+    <script src="JS/app.js"></script>
+
+</body>
+
+</html>
